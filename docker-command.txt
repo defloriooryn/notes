@@ -40,5 +40,40 @@
 13. docker container exec -i -t <nama/id_container> /bin/bash
 -> untuk masuk kedalam container dan mengeksekusi program yang terdapat di dalam container
 
-14. docker container create --name <nama_container> --env KEY="value" --env KEY2="value" <nama/id_images>
+14. docker container --env KEY="value" --env KEY2="value" <nama/id_images>
 -> untuk menambah environment variabel ke dalam container
+
+15. dockeer container stats
+-> untuk menampilkan penggunaan resource seperti cpu/memori di container
+
+16. docker container create --memory <total_memori> --cpu <total_cpu> (contoh --memory 200m / 1g, --cpus 1) <nama/id_images>
+-> untuk mengatur penggunaan resource container
+
+17. docker container --mount "type=bind,source=folder,destination=folder,readonly" <nama/id_image>
+-> untuk melakukan mounting / sharing file antara host dan container ===> 
+      contoh : docker container create --name exmongo --mount "type=bind,source=C:\Users\Nizam\Desktop\notes\tesdocker,destination=/data/db" --publish 27018:27017 --env 
+               MONGO_INITDB_ROOT_PASSWORD=nizam --env MONGO_INITDB_ROOT_USERNAME=nizam mongo
+
+18. docker volume ls 
+-> untuk menampilkan daftar volume
+
+19. docker volume create <nama_volume> & docker volume rm <nama_volume>
+- untuk membuat & menghapus volume
+
+20. docker search <nama_app>
+-> untuk mencari app yang tersedia untuk dipull di docker hub
+
+21. docker run -i -t <nama_image_os>
+-> untuk membuat sekaligus menjalankan container
+
+22. docker network create --driver <nama_driver> <nama_container> ( contoh --driver bridge jaringan1 )
+- untuk membuat network di container
+
+23. docker network ls
+-> untuk melihat network yang ada di docker
+
+24. docker network rm <nama_network>
+-> untuk menghapus network
+
+25. docker network create --driver <nama_network> <nama_container> <image/id_image>
+-> untuk membuat container sekaligus attach ke jaringan yang sudah di buat
