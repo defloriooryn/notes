@@ -1,0 +1,10 @@
+sudo apt update
+wget -O - http://rpms.litespeedtech.com/debian/enable_lst_debian_repo.sh | sudo bash
+apt-cache policy openlitespeed
+apt install openlitespeed -y
+/usr/local/lsws/admin/misc/admpass.sh
+
+*/
+port 7080 : web untuk admin
+port 8088 : web default
+/*
