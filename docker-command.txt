@@ -77,3 +77,9 @@
 
 25. docker network create --driver <nama_network> <nama_container> <image/id_image>
 -> untuk membuat container sekaligus attach ke jaringan yang sudah di buat
+
+//untuk mengupload images ke docker hub menggunakan perintah:
+   - docker tag redhat <nama/id_images> defloriooryn/redhat-aja <nama image yang akan di upload>
+   - docker push defloriooryn/redhat-aja
+
+26. 
