@@ -82,4 +82,10 @@
    - docker tag redhat <nama/id_images> defloriooryn/redhat-aja <nama image yang akan di upload>
    - docker push defloriooryn/redhat-aja
 
-26. 
+26. docker <images/container/network/volume> prune
+   - untuk menghapus secara otomatis resource yang tidak digunakan
+   
+27. docker inspect <nama_images/container/volume/network>
+   - untuk melihat detail dari resource 
+   
+28. docker commit 
