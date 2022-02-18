@@ -83,9 +83,16 @@
    - docker push defloriooryn/redhat-aja
 
 26. docker <images/container/network/volume> prune
-   - untuk menghapus secara otomatis resource yang tidak digunakan
+-> untuk menghapus secara otomatis resource yang tidak digunakan
    
 27. docker inspect <nama_images/container/volume/network>
-   - untuk melihat detail dari resource 
+-> untuk melihat detail dari resource 
    
-28. docker commit 
+28. docker search <nama_images>
+-> untuk search images dari docker hub
+
+29. docker image save -o /c/Desktop/image.tar <nama_image>
+-> untuk backup image ke host
+
+30. docker 
+  
