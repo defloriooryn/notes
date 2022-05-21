@@ -1,0 +1,20 @@
+1) sudo apt update
+
+2) (Install snap)
+      For Kali Linux/Debian : sudo apt install snapd
+      For Fedora : sudo dnf install snapd
+      For Arch Linux : git clone https://aur.archlinux.org/snapd.git
+                       cd snapd
+                       makepkg -si
+
+3) sudo snap install --devmode --beta anbox
+
+4) sudo apt --fix-broken install
+
+5) sudo apt install android-tools-adb
+
+6) wget https://raw.githubusercontent.com/geeks-r-us/anbox-playstore-installer/master/install-playstore.sh
+
+7) chmod +x install-playstore.sh
+
+8) ./install-playstore.sh
